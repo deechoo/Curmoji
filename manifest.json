@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Emoji Cursor",
+  "description": "Browse the websites with Emoji cursor",
+  "version": "1.0",
+  "options_page": "option/index.html",
+  "icons": {
+      "48": "715.png"
+   },
+     "background":{
+            "scripts":["background.js"]
+        },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["jquery-1.8.3.min.js","emoji.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "*://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "emoji.png"
+  },
+  "web_accessible_resources": ["alink.png","emoji.png","sad.png"]
+}

@@ -1,0 +1,4 @@
+html,body { cursor:url('chrome-extension://__MSG_@@extension_id__/emoji.png'), auto !important; }*/
+a { cursor:url('chrome-extension://__MSG_@@extension_id__/alink.png'), auto !important; }
+.curmoji { cursor:url('chrome-extension://__MSG_@@extension_id__/alink.png'), auto !important; }
+
